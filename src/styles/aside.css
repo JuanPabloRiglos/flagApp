@@ -1,0 +1,51 @@
+aside{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    padding: 2%;
+    margin: auto;
+    height: 8 vh; 
+  
+}
+
+aside div {
+    justify-content: center;
+    align-items: center ;
+}
+aside div legend {
+    align-items: center;
+    justify-content: center;
+    padding-bottom :5%;
+}
+#asideUntilLarge{
+   display: flex;
+   flex-direction: row;  
+   
+
+}
+#asideLarge{
+   display: none;
+}
+
+@media (min-width:767px) {
+    aside{
+        position:absolute;
+         top:100px;
+          right:0px; 
+          width:10%;
+           height:60%;
+           display:flex;
+        flex-direction:column
+    }
+    aside h3{
+        width: 100%;
+        margin-Left:10%;
+    }
+    #asideLarge{
+        display: block;
+    }
+    #asideUntilLarge{
+        display: none
+    }
+}
