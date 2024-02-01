@@ -1,8 +1,8 @@
 import { storeQuestions } from "../store/storeQuestions"
-import { storePoints } from "../store/storePoints"
+// import { storePoints } from "../store/storePoints"
 export const useResult = ()=>{
-    const setActualGame = storePoints(state => state.setActualGame)
-    const actualGame = storePoints(state => state.actualGame)
+    // const setActualGame = storePoints(state => state.setActualGame)
+    // const actualGame = storePoints(state => state.actualGame)
     const questions = storeQuestions(state => state.questions)
     let corretcAnswers : number = 0
     let wrongAnswer : number = 0

@@ -8,7 +8,7 @@ import { persist } from 'zustand/middleware'
 interface componentState{
     questions: question[],
     currentQuestion: number,
-    fetchQuestions:(newQuestion : question)=> Promise<void>,
+    fetchQuestions:(newQuestion : question)=> void,
     selecAnswer: (questionId : string, selectAnswer:string) => void,
     restartGame: ()=> void
 }

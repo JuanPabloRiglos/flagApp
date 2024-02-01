@@ -9,7 +9,7 @@ export function ModalEndGame( {level}:modalProps ){
 
     const restartGame = storeQuestions(state => state.restartGame)
     
-    console.log(level)
+    
 
 const style = {
     position: 'absolute' as const,

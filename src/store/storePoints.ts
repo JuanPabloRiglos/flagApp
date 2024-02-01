@@ -1,5 +1,6 @@
-import { create } from "zustand";
-import {record} from '../types'
+
+import  {create} from "zustand";
+import {record, SetState, GetState} from '../types'
 import { persist } from 'zustand/middleware'
 
 interface componentState {
@@ -7,20 +8,20 @@ interface componentState {
     record:record,
     actualGame:record,
     setActualGame:(currentGame:record)=> void,
-    setRecord:(objet:record)=> void
+    setRecords:(objet:record)=> void
 }
 
-export const storePoints = create<componentState>()(persist((set,get)=>{
+export const storePoints = create<componentState>()(persist((set : SetState<componentState> ,get: GetState<componentState>) : componentState=>{
     return{
         allGames: [],
-        record:{},
-        actualGame:{},
+        record:{name: '', points:0},
+        actualGame:{name: '', points:0},
         setActualGame:(currentGame:record)=>{
-            console.log(currentGame)
+        
             set({actualGame: currentGame}) 
             
         },
-        setRecords:(actualGame : record)=>{
+        setRecords:(actualGame : record)=> {
             const {allGames} = get()
             const copyGames = structuredClone(allGames)
             const newGames = [...copyGames, actualGame]
