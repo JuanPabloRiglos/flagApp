@@ -1,3 +1,11 @@
+# Flag App
+Es una aplicacion de tipo juego, donde el usuario tienen 5 vidas para intentar responder las 50 preguntas necesarias para ganar el juego.
+Fue realizada la aplizacion a los solos fines de poner en practica lo aprendido con Zustand. 
+Se puede ver la aplicacion en el siguiente link:
+
+
+- (https://juanpabloriglos.github.io/flagApp/)
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
